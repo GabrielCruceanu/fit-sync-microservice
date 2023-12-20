@@ -31,6 +31,9 @@ export class User {
   @Field(() => Avatars, { nullable: true })
   avatar?: Avatars | null;
 
+  @Field({ nullable: true })
+  address?: string | null;
+
   @Field()
   role: string;
 
